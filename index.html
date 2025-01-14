@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <!-- Title and Input Division -->
+        <div class="titleInput">
+            <h1>Etch-a-Sketch</h1>
+            <input type="range" min="10" max="100" value="50" id="rangeBar">
+            <div class="sizeTextContainer">                
+                <p>
+                    Size: <p id="gridSizeText">50 x 50</p>
+                </p>                                 
+            </div>  
+        </div> 
+        <!-- Color Picker and Button Division -->
+         <div class="colorAndBtn">
+            <div class="colorPickerContainer">
+                <p>Pick a color:</p>
+                <input type="color" id="colorPicker">
+            </div>            
+            <div class="buttons">
+                <button id="eraser">Eraser</button>
+                <button id="clear">Clear</button>
+            </div>
+         </div>
+    </header>
+    <main>
+        <div class="sketchContainer">
+            <div class="gridContainer"></div>
+        </div>
+    </main>
+</body>
+</html>
